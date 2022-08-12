@@ -1,5 +1,12 @@
 #/bin/bash
 
+curl=`which curl`
+if [ ! "$curl" == */* ]; then
+    echo "Installation of cURL is required."
+    exit 1
+fi
+    
+
 echo "This shell script downloads files from https://opensource.apple.com and places them in /use/local/include/."
 echo "Are you continue? (y|n)"
 read yn
