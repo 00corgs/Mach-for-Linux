@@ -5,7 +5,7 @@ install="/usr/local/include/"
 
 echo "This shell script downloads files from https://opensource.apple.com and places them in /use/local/include/."
 echo "Are you continue? (y|n)"
-read yn
+read -r yn
 case "$yn" in
     [yY]*) echo "downloading..."
     ;;
