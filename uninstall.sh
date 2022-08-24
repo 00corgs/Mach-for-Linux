@@ -3,6 +3,7 @@
 uninstall="/usr/local/include/"
 
 echo "Installed directory is $uninstall"
+echo "If you changed install directory, edit this file."
 echo "Are you continue?(y|n)"
 read -r yn
 case "$yn" in

@@ -3,7 +3,8 @@
 #If you want to change the installation directory, change here.
 install="/usr/local/include/"
 
-echo "This shell script downloads files from https://opensource.apple.com and places them in /use/local/include/."
+echo "This shell script downloads files from https://opensource.apple.com and places them in $install."
+echo "If you want to change the installation directory, edit this file."
 echo "Are you continue? (y|n)"
 read -r yn
 case "$yn" in
